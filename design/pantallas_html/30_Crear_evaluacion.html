@@ -1,0 +1,44 @@
+<!doctype html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<title>Memora v2 – Crear evaluación</title>
+</head>
+<body>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Fredoka:wght@500;600;700&amp;family=Inter:wght@400;500;600&amp;display=swap">
+<style>
+body{margin:0}
+a{color:#FFFFFF}a:hover{color:#F2A93B}
+</style>
+<div style="width: 390px; height: 844px; box-sizing: border-box; overflow: hidden; background: #0E1430; font-family: 'Inter', sans-serif; color: #FFFFFF; padding: 20px 20px 28px; display: flex; flex-direction: column; gap: 18px">
+<div style="display: flex; align-items: center; gap: 14px">
+<button aria-label="Volver" style="width: 44px; height: 44px; border-radius: 999px; background: #1B2347; border: 2px solid #2E3970; color: #FFFFFF; display: flex; align-items: center; justify-content: center; box-shadow: 0 4px 0 #2E3970">
+<svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M15 5l-7 7 7 7"></path></svg></button>
+<h1 style="margin: 0; font-family: 'Fredoka', sans-serif; font-weight: 700; font-size: 28px">Nueva evaluación</h1>
+</div>
+
+<div style="background: #FFFFFF; color: #0E1430; border-radius: 28px; padding: 18px 22px; display: flex; flex-direction: column; gap: 10px; box-shadow: 0 6px 0 #C9CEDD">
+<div style="display: flex; flex-direction: column; gap: 6px">
+<label for="ce-mazo" style="font-size: 13px; font-weight: 600; color: #4A5370">Mazo</label>
+<select id="ce-mazo" style="width: 100%; min-width: 0; box-sizing: border-box; height: 46px; border-radius: 16px; border: 2px solid #7C84A3; background: #FFFFFF; padding: 0 12px; font-family: 'Inter', sans-serif; font-size: 16px; color: #0E1430"><option>Unidad 2 · Software educativo</option></select>
+</div>
+<div style="display: grid; grid-template-columns: minmax(0,1fr) minmax(0,1fr); gap: 12px">
+<div style="display: flex; flex-direction: column; gap: 6px"><label for="ce-preg" style="font-size: 13px; font-weight: 600; color: #4A5370">Preguntas (de 40)</label><input id="ce-preg" value="15" style="width: 100%; min-width: 0; box-sizing: border-box; height: 46px; border-radius: 16px; border: 2px solid #7C84A3; padding: 0 12px; font-family: 'Inter', sans-serif; font-size: 16px; color: #0E1430"></div>
+<div style="display: flex; flex-direction: column; gap: 6px"><label for="ce-min" style="font-size: 13px; font-weight: 600; color: #4A5370">Dominio mínimo</label><input id="ce-min" value="80 %" style="width: 100%; min-width: 0; box-sizing: border-box; height: 46px; border-radius: 16px; border: 2px solid #7C84A3; padding: 0 12px; font-family: 'Inter', sans-serif; font-size: 16px; color: #0E1430"></div>
+</div>
+<div style="display: grid; grid-template-columns: minmax(0,1fr) minmax(0,1fr); gap: 12px">
+<div style="display: flex; flex-direction: column; gap: 6px"><label for="ce-total" style="font-size: 13px; font-weight: 600; color: #4A5370">Tiempo total</label><input id="ce-total" value="15 min" style="width: 100%; min-width: 0; box-sizing: border-box; height: 46px; border-radius: 16px; border: 2px solid #A8650C; background: #FFF4E2; padding: 0 12px; font-family: 'Inter', sans-serif; font-size: 16px; color: #0E1430"></div>
+<div style="display: flex; flex-direction: column; gap: 6px"><label for="ce-porpreg" style="font-size: 13px; font-weight: 600; color: #4A5370">Por pregunta</label><input id="ce-porpreg" value="45 s" style="width: 100%; min-width: 0; box-sizing: border-box; height: 46px; border-radius: 16px; border: 2px solid #A8650C; background: #FFF4E2; padding: 0 12px; font-family: 'Inter', sans-serif; font-size: 16px; color: #0E1430"></div>
+</div>
+<div style="display: grid; grid-template-columns: minmax(0,1fr) minmax(0,1fr); gap: 12px">
+<div style="display: flex; flex-direction: column; gap: 6px"><label for="ce-abre" style="font-size: 13px; font-weight: 600; color: #4A5370">Abre</label><input id="ce-abre" value="14 nov, 8:00" style="width: 100%; min-width: 0; box-sizing: border-box; height: 46px; border-radius: 16px; border: 2px solid #7C84A3; background: #FFFFFF; padding: 0 12px; font-family: 'Inter', sans-serif; font-size: 15px; color: #0E1430"></div>
+<div style="display: flex; flex-direction: column; gap: 6px"><label for="ce-cierra" style="font-size: 13px; font-weight: 600; color: #4A5370">Cierra</label><input id="ce-cierra" value="17 nov, 23:59" style="width: 100%; min-width: 0; box-sizing: border-box; height: 46px; border-radius: 16px; border: 2px solid #7C84A3; background: #FFFFFF; padding: 0 12px; font-family: 'Inter', sans-serif; font-size: 15px; color: #0E1430"></div>
+</div>
+</div>
+
+<fieldset style="margin: 0; padding: 0; border: none; display: flex; flex-direction: column; gap: 8px"><legend style="padding: 0; margin-bottom: 6px; font-family: 'Fredoka', sans-serif; font-weight: 600; font-size: 22px">Qué pasa con los resultados</legend><label style="position: relative; display: flex; align-items: center; gap: 14px; min-height: 64px; padding: 12px 16px; border-radius: 16px; background: #2A3466; box-sizing: border-box; box-shadow: 0 4px 0 #3D4A85"><input type="checkbox" checked style="position: absolute; opacity: 0; width: 1px; height: 1px; margin: 0"><span style="flex: 1; display: flex; flex-direction: column; gap: 2px"><span style="font-weight: 600; font-size: 15px">Las fallas vuelven a repaso</span><span style="font-size: 13px; color: #B4BBD8">Sus tarjetas regresan a Aprendiendo</span></span><span aria-hidden="true" style="flex: none; width: 28px; height: 28px; border-radius: 999px; background: #F2A93B; color: #0E1430; display: flex; align-items: center; justify-content: center"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12l5 5 9-10"></path></svg></span></label><label style="position: relative; display: flex; align-items: center; gap: 14px; min-height: 64px; padding: 12px 16px; border-radius: 16px; background: #2A3466; box-sizing: border-box; box-shadow: 0 4px 0 #3D4A85"><input type="checkbox" checked style="position: absolute; opacity: 0; width: 1px; height: 1px; margin: 0"><span style="flex: 1; display: flex; flex-direction: column; gap: 2px"><span style="font-weight: 600; font-size: 15px">Plan de refuerzo</span><span style="font-size: 13px; color: #B4BBD8">Se arma solo con los temas fallados</span></span><span aria-hidden="true" style="flex: none; width: 28px; height: 28px; border-radius: 999px; background: #F2A93B; color: #0E1430; display: flex; align-items: center; justify-content: center"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12l5 5 9-10"></path></svg></span></label><label style="position: relative; display: flex; align-items: center; gap: 14px; min-height: 64px; padding: 12px 16px; border-radius: 16px; background: #2A3466; box-sizing: border-box; box-shadow: 0 4px 0 #3D4A85"><input type="checkbox" checked style="position: absolute; opacity: 0; width: 1px; height: 1px; margin: 0"><span style="flex: 1; display: flex; flex-direction: column; gap: 2px"><span style="font-weight: 600; font-size: 15px">Segunda oportunidad</span><span style="font-size: 13px; color: #B4BBD8">Nueva evaluación si no llega al mínimo</span></span><span aria-hidden="true" style="flex: none; width: 28px; height: 28px; border-radius: 999px; background: #F2A93B; color: #0E1430; display: flex; align-items: center; justify-content: center"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12l5 5 9-10"></path></svg></span></label><label style="position: relative; display: flex; align-items: center; gap: 14px; min-height: 64px; padding: 12px 16px; border-radius: 16px; background: #1B2347; border: 2px solid #2E3970; box-sizing: border-box; box-shadow: 0 4px 0 #2E3970"><input type="checkbox" style="position: absolute; opacity: 0; width: 1px; height: 1px; margin: 0"><span style="flex: 1; display: flex; flex-direction: column; gap: 2px"><span style="font-weight: 600; font-size: 15px">Mostrar la nota</span><span style="font-size: 13px; color: #B4BBD8">El estudiante ve su calificación</span></span><span aria-hidden="true" style="flex: none; width: 28px; height: 28px; border-radius: 999px; border: 2px solid #8A93B4; box-sizing: border-box"></span></label></fieldset>
+
+<button style="margin-top: auto; height: 56px; border: none; border-radius: 999px; background: #F2A93B; color: #0E1430; font-family: 'Fredoka', sans-serif; font-weight: 600; font-size: 17px; box-shadow: 0 4px 0 #C17A14; text-transform: uppercase; letter-spacing: 0.8px">Revisar preguntas</button>
+</div>
+</body>
+</html>

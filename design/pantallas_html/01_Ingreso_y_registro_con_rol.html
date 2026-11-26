@@ -1,0 +1,49 @@
+<!doctype html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<title>Memora – Ingreso y registro</title>
+</head>
+<body>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Fredoka:wght@500;600;700&amp;family=Inter:wght@400;500;600&amp;display=swap">
+<style>
+body{margin:0}
+a{color:#FFFFFF}a:hover{color:#F2A93B}
+</style>
+<div style="width: 390px; height: 844px; box-sizing: border-box; overflow: hidden; position: relative; background: #0E1430; font-family: 'Inter', sans-serif; color: #FFFFFF; padding: 24px 20px 28px; display: flex; flex-direction: column; gap: 22px">
+<div style="display: flex; align-items: center; justify-content: space-between">
+<div style="display: flex; flex-direction: column; gap: 4px">
+<span style="font-family: 'Fredoka', sans-serif; font-weight: 700; font-size: 40px; line-height: 1">memora</span>
+<span style="font-size: 13px; color: #B4BBD8">Crear cuenta · paso 1 de 3</span>
+</div>
+<svg viewBox="0 0 200 200" width="76" height="76" aria-hidden="true"><path d="M156 118 Q174 100 172 78" stroke="#F2A93B" stroke-width="16" fill="none" stroke-linecap="round"></path><path d="M100 44 C138 44 162 92 166 132 C169 162 142 170 100 170 C58 170 31 162 34 132 C38 92 62 44 100 44 Z" fill="#F2A93B"></path><ellipse cx="77" cy="126" rx="4.5" ry="6.5" fill="#0E1430"></ellipse><ellipse cx="123" cy="126" rx="4.5" ry="6.5" fill="#0E1430"></ellipse><path d="M92 140 Q100 147 108 140" stroke="#0E1430" stroke-width="3.5" fill="none" stroke-linecap="round"></path></svg>
+</div>
+
+<div role="tablist" aria-label="Acceso" style="display: grid; grid-template-columns: 1fr 1fr; gap: 6px; padding: 6px; border-radius: 999px; background: #1B2347; border: 2px solid #2E3970">
+<button role="tab" aria-selected="false" style="height: 44px; border: none; border-radius: 999px; background: transparent; color: #B4BBD8; font-family: 'Fredoka', sans-serif; font-weight: 600; font-size: 15px">Iniciar sesión</button>
+<button role="tab" aria-selected="true" style="height: 44px; border: none; border-radius: 999px; background: #FFFFFF; color: #0E1430; font-family: 'Fredoka', sans-serif; font-weight: 600; font-size: 15px; box-shadow: 0 3px 0 #C9CEDD">Crear cuenta</button>
+</div>
+
+<div style="display: flex; flex-direction: column; gap: 12px">
+<div style="display: flex; flex-direction: column; gap: 6px">
+<label for="in-correo" style="font-size: 14px; font-weight: 600; color: #B4BBD8">Correo electrónico</label>
+<input id="in-correo" value="luis.perez@gmail.com" style="height: 52px; border-radius: 16px; border: 2px solid #6873B0; background: #1B2347; padding: 0 16px; font-family: 'Inter', sans-serif; font-size: 16px; color: #FFFFFF">
+</div>
+<div style="display: flex; flex-direction: column; gap: 6px">
+<label for="in-clave" style="font-size: 14px; font-weight: 600; color: #B4BBD8">Contraseña</label>
+<input id="in-clave" type="password" value="contraseña" style="height: 52px; border-radius: 16px; border: 2px solid #6873B0; background: #1B2347; padding: 0 16px; font-family: 'Inter', sans-serif; font-size: 16px; color: #FFFFFF">
+<a href="#" style="align-self: flex-end; font-size: 14px; font-weight: 600; color: #B4BBD8">¿Olvidaste tu contraseña?</a>
+</div>
+</div>
+
+<fieldset style="margin: 0; padding: 0; border: none; display: flex; flex-direction: column; gap: 10px">
+<legend style="padding: 0; margin-bottom: 8px; font-family: 'Fredoka', sans-serif; font-weight: 600; font-size: 20px">¿Cómo usarás Memora?</legend>
+<label style="display: flex; gap: 14px; align-items: center; min-height: 64px; padding: 0 16px; border-radius: 16px; background: #F2A93B; color: #0E1430; box-sizing: border-box; box-shadow: 0 4px 0 #C17A14"><input type="radio" name="rol" checked style="width: 20px; height: 20px; margin: 0; accent-color: #0E1430"><span style="display: flex; flex-direction: column"><span style="font-weight: 600; font-size: 16px">Soy estudiante</span><span style="font-size: 13px">Luego te unes a tu sección con su código</span></span></label>
+<label style="display: flex; gap: 14px; align-items: center; min-height: 64px; padding: 0 16px; border-radius: 16px; background: #1B2347; border: 2px solid #2E3970; box-sizing: border-box; box-shadow: 0 4px 0 #2E3970"><input type="radio" name="rol" style="width: 20px; height: 20px; margin: 0; accent-color: #F2A93B"><span style="display: flex; flex-direction: column"><span style="font-weight: 600; font-size: 16px">Soy profesor</span><span style="font-size: 13px; color: #B4BBD8">Luego te unes a tu institución y ella confirma tu rol</span></span></label>
+</fieldset>
+
+<a href="#" style="margin-top: auto; align-self: center; font-size: 14px; font-weight: 600; color: #B4BBD8; min-height: 44px; display: flex; align-items: center">¿Coordinas una universidad o un curso? Regístralo</a>
+<button style=" height: 56px; border: none; border-radius: 999px; background: #FFFFFF; color: #0E1430; font-family: 'Fredoka', sans-serif; font-weight: 600; font-size: 17px; box-shadow: 0 4px 0 #C9CEDD; text-transform: uppercase; letter-spacing: 0.8px">Continuar</button>
+</div>
+</body>
+</html>

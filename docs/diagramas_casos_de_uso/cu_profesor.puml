@@ -1,0 +1,62 @@
+@startuml cu_profesor
+left to right direction
+skinparam shadowing false
+skinparam defaultFontName "DejaVu Sans"
+skinparam defaultFontSize 13
+skinparam actorBorderColor #1E2A5A
+skinparam actorBackgroundColor #F2A93B
+skinparam usecaseBorderColor #1E2A5A
+skinparam usecaseBackgroundColor #FFFFFF
+skinparam rectangleBorderColor #1E2A5A
+skinparam rectangleFontSize 15
+skinparam ArrowColor #1E2A5A
+actor "Profesor" as P
+actor "Planificador\nde repasos" as PL <<secundario>>
+rectangle "Memora (aplicación) · Profesor" {
+  usecase "CU-01 Iniciar sesión, registrarse\ny recuperar la contraseña" as CU01
+  usecase "CU-31 Consultar guía\nde inicio y ayuda" as CU31
+  usecase "CU-35 Unirse a una institución\ny cambiar de institución" as CU35
+  usecase "CU-27 Gestionar la sección" as CU27
+  usecase "CU-37 Configurar el ingreso\ny atender solicitudes" as CU37
+  usecase "Generar código nuevo\n(código, enlace y QR)" as EXT_COD
+  usecase "Desbloquear una unidad\na un estudiante" as EXT_UN
+  usecase "CU-23 Consultar desempeño\nde un estudiante" as CU23
+  usecase "CU-17 Consultar rendimiento\npor tema" as CU17
+  usecase "CU-05 Crear mazo" as CU05
+  usecase "CU-22 Editar o eliminar\nmazo y tarjetas" as CU22
+  usecase "CU-08 Asignar mazo\na una sección" as CU08
+  usecase "CU-07 Avalar o rechazar mazo" as CU07
+  usecase "CU-12 Crear evaluación" as CU12
+  usecase "Revisar y editar\npreguntas" as INC_REV
+  usecase "CU-25 Gestionar evaluación\npublicada" as CU25
+  usecase "Conceder tiempo extra\no reapertura" as EXT_EX
+  usecase "CU-24 Consultar y exportar\nnotas" as CU24
+  usecase "CU-26 Atender reportes y\ntarjetas problemáticas" as CU26
+  usecase "CU-18 Sincronizar datos" as CU18
+  usecase "CU-30 Recibir\nnotificaciones" as CU30
+}
+P --> CU01
+P --> CU31
+P --> CU35
+P --> CU27
+P --> CU37
+P --> CU23
+P --> CU17
+P --> CU05
+P --> CU22
+P --> CU08
+P --> CU07
+P --> CU12
+P --> CU25
+P --> CU24
+P --> CU26
+P --> CU18
+P --> CU30
+EXT_UN ..> CU27 : <<extend>>
+EXT_UN ..> CU23 : <<extend>>
+CU12 ..> INC_REV : <<include>>
+EXT_EX ..> CU25 : <<extend>>
+EXT_EX ..> CU23 : <<extend>>
+EXT_COD ..> CU37 : <<extend>>
+CU30 <-- PL
+@enduml

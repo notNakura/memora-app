@@ -1,0 +1,55 @@
+flowchart TB
+  classDef est fill:#F2A93B,stroke:#C17A14,color:#0E1430
+  classDef prof fill:#CFF1E7,stroke:#0E7C6A,color:#0E1430
+  classDef adm fill:#FFFFFF,stroke:#1E2A5A,color:#0E1430
+  classDef com fill:#1E2A5A,stroke:#1E2A5A,color:#FFFFFF
+
+  subgraph REG["Registro e ingreso"]
+    P1["1 Ingreso y registro"]:::com --> P2["2 Verifica tu correo"]:::com --> P3["3 Completa tus datos"]:::com --> P4["4 Guía de inicio"]:::com
+  end
+
+  P4 -->|"Soy estudiante, sin membresía"| P5
+  P4 -->|"Soy profesor, sin membresía"| P22
+  P4 -->|"ya pertenece por la lista"| HOY
+  P3 -->|"si tocó Registrar mi institución"| P33
+
+  subgraph EST["Estudiante · pestañas Hoy · Mazos · Evaluar · Perfil"]
+    HOY["6 Inicio del estudiante (Hoy)"]:::est
+    P5["5 Unirse a una sección"]:::est --> HOY
+    HOY --> P7["7 Avisos"]:::est
+    HOY --> P8["8 Evaluación diagnóstica"]:::est --> P9["9 Sesión de repaso"]:::est --> P10["10 ¿Por qué veo esta tarjeta?"]:::est
+    HOY --> P11["11 Reto de dominio"]:::est
+    P9 --> P16["16 Unidad dominada"]:::est
+    EV["12 Evaluar"]:::est --> P13["13 Presentar evaluación"]:::est --> P14["14 Resultados y plan de refuerzo"]:::est
+    HOY --> P15["15 Progreso"]:::est
+    HOY -->|"pestaña"| EV
+    HOY -->|"pestaña"| MZ
+    HOY -->|"pestaña"| PF
+    MZ["17 Mazos"]:::est --> P18["18 Detalle del mazo"]:::est --> P20["20 Reportar error"]:::est
+    MZ --> P19["19 Subir mazo"]:::est
+    PF["21 Perfil"]:::est --> P22["22 Mis instituciones"]:::est
+    PF --> P23["23 Ajustes y cuenta"]:::est
+  end
+
+  subgraph PROF["Profesor (institución activa con rol teacher)"]
+    PD["24 Panel docente"]:::prof --> MS["25 Mi sección"]:::prof
+    MS --> INV["26 Invitar a la sección"]:::prof
+    MS --> SOL["27 Solicitudes de ingreso"]:::prof
+    MS --> DE["28 Desempeño del estudiante"]:::prof
+    PD --> RP["29 Reportes y tarjetas problemáticas"]:::prof
+    PD -->|"pestaña Evaluaciones"| CE["30 Crear evaluación"]:::prof --> RV["31 Revisar preguntas"]:::prof
+    PD --> NT["32 Notas de la evaluación"]:::prof
+  end
+
+  subgraph ADM["Administración (institution_admin o area_admin)"]
+    P33["33 Registrar mi institución"]:::adm --> AR["34 Áreas y administradores"]:::adm
+    AR --> GA["35 Gestión académica"]:::adm
+    AR --> US["36 Usuarios"]:::adm
+    AR --> MO["37 Moderación y bitácora"]:::adm
+  end
+
+  P22 -->|"institución activa con rol de profesor"| PD
+  P22 -->|"rol de administrador de la institución"| AR
+  P22 -->|"rol de administrador de área"| GA
+  PD -->|"pestaña Mazos"| MZ
+  PD -->|"pestaña Perfil"| PF

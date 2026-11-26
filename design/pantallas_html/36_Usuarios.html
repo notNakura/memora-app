@@ -1,0 +1,46 @@
+<!doctype html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<title>Memora – Usuarios</title>
+</head>
+<body>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Fredoka:wght@500;600;700&amp;family=Inter:wght@400;500;600&amp;display=swap">
+<style>
+body{margin:0}
+::placeholder{color:#B4BBD8;opacity:1}
+a{color:#FFFFFF}a:hover{color:#F2A93B}
+</style>
+<div style="width: 390px; height: 844px; box-sizing: border-box; overflow: hidden; background: #0E1430; font-family: 'Inter', sans-serif; color: #FFFFFF; padding: 20px 20px 28px; display: flex; flex-direction: column; gap: 16px">
+<div style="display: flex; flex-direction: column; gap: 4px">
+<span style="font-size: 14px; color: #B4BBD8">Administrador · UNERG</span>
+<h1 style="margin: 0; font-family: 'Fredoka', sans-serif; font-weight: 700; font-size: 30px">Usuarios</h1>
+</div>
+
+<div style="display: flex; gap: 10px">
+<label for="buscar" style="position: absolute; width: 1px; height: 1px; overflow: hidden">Buscar usuario</label>
+<input id="buscar" placeholder="Buscar usuario" style="flex: 1; min-width: 0; height: 48px; border-radius: 16px; border: 2px solid #6873B0; background: #1B2347; padding: 0 16px; font-family: 'Inter', sans-serif; font-size: 15px; color: #FFFFFF">
+<button style="height: 48px; padding: 0 16px; border: none; border-radius: 999px; background: #F2A93B; color: #0E1430; font-family: 'Fredoka', sans-serif; font-weight: 600; font-size: 14px; box-shadow: 0 4px 0 #C17A14">Importar CSV</button>
+</div>
+
+<div style="display: flex; flex-direction: column; gap: 10px; padding: 16px; border-radius: 16px; background: #FFFFFF; color: #0E1430; box-shadow: 0 4px 0 #C9CEDD">
+<span style="font-size: 13px; font-weight: 600; color: #0E7C6A">Última importación · hace 1 hora</span>
+<span style="font-size: 15px">inscritos_SI3_2026-II.csv: 30 usuarios creados, 2 filas con cédula repetida.</span>
+<a href="#" style="font-size: 14px; font-weight: 600; color: #0E1430">Ver filas con error</a>
+</div>
+
+<div style="display: flex; justify-content: space-between; align-items: baseline"><span style="font-size: 14px; font-weight: 600; color: #B4BBD8">Por confirmar (5)</span><a href="#" style="font-size: 14px; font-weight: 600; color: #F2A93B">Revisar en bloque</a></div>
+<div style="display: flex; align-items: center; gap: 12px; padding: 14px 16px; border-radius: 16px; background: #1B2347; border: 2px solid #F2A93B">
+<span style="flex: 1; display: flex; flex-direction: column"><span style="font-weight: 600; font-size: 15px">José Ramírez</span><span style="font-size: 13px; color: #B4BBD8">Se registró como profesor</span></span>
+<button style="height: 40px; padding: 0 14px; border: none; border-radius: 999px; background: #FFFFFF; color: #0E1430; font-family: 'Fredoka', sans-serif; font-weight: 600; font-size: 14px">Confirmar</button>
+</div>
+
+<span style="font-size: 14px; font-weight: 600; color: #B4BBD8">Todos</span>
+<div style="display: flex; flex-direction: column; gap: 2px; border-radius: 16px; overflow: hidden">
+<div style="display: flex; align-items: center; gap: 12px; min-height: 58px; padding: 0 16px; background: #1B2347"><span style="flex: 1; display: flex; flex-direction: column"><span style="font-weight: 600; font-size: 15px">María Hernández</span><span style="font-size: 13px; color: #B4BBD8">Profesora · activa</span></span><a href="#" style="font-size: 13px; font-weight: 600; color: #B4BBD8; text-decoration: none">Opciones</a></div>
+<div style="display: flex; align-items: center; gap: 12px; min-height: 58px; padding: 0 16px; background: #1B2347"><span style="flex: 1; display: flex; flex-direction: column"><span style="font-weight: 600; font-size: 15px">Luis Pérez</span><span style="font-size: 13px; color: #B4BBD8">Estudiante · activo</span></span><a href="#" style="font-size: 13px; font-weight: 600; color: #B4BBD8; text-decoration: none">Opciones</a></div>
+<div style="display: flex; align-items: center; gap: 12px; min-height: 58px; padding: 0 16px; background: #1B2347"><span style="flex: 1; display: flex; flex-direction: column"><span style="font-weight: 600; font-size: 15px; color: #B4BBD8">Tomás Vera</span><span style="font-size: 13px; color: #B4BBD8">Estudiante · retirado de la institución</span></span><a href="#" style="font-size: 13px; font-weight: 600; color: #F2A93B; text-decoration: none">Reincorporar</a></div>
+</div>
+</div>
+</body>
+</html>

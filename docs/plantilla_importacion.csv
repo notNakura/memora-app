@@ -1,0 +1,4 @@
+tipo;unidad;anverso;reverso;incorrecta_1;incorrecta_2;incorrecta_3
+pregunta;2;¿Qué indica la cardinalidad 1:N?;Una ocurrencia se relaciona con muchas de la otra entidad;Ambas entidades son opcionales;La relación es recursiva;Hay una sola tabla
+completar;2;Una clave ____ identifica de forma única cada fila.;primaria;;;
+ordenar;3;Ordena las formas normales;1FN|2FN|3FN;;;

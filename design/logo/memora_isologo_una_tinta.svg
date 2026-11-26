@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:serif="http://www.serif.com/" version="1.1" width="1080px" height="750px" viewBox="0 0 1080 750">
+<g id="Fondo" serif:id="Fondo">
+<rect id="Color_de_fondo" serif:id="Color de fondo" x="0" y="0" width="1080" height="750" fill="#FFFFFF"/>
+</g>
+<g id="Tarjetas" serif:id="Tarjetas">
+<path id="Tarjeta_ambar" serif:id="Tarjeta ámbar" d="M278.81 131.8 L817.52 56.09 A48.0 48.0 0 0 1 871.73 96.94 L914.04 397.99 A48.0 48.0 0 0 1 873.19 452.2 L334.48 527.91 A48.0 48.0 0 0 1 280.27 487.06 L237.96 186.01 A48.0 48.0 0 0 1 278.81 131.8 Z" fill="#C4C9DA"/>
+<path id="Tarjeta_verde" serif:id="Tarjeta verde" d="M254.71 145.46 L797.39 107.51 A48.0 48.0 0 0 1 848.62 152.05 L869.82 455.31 A48.0 48.0 0 0 1 825.29 506.54 L282.61 544.49 A48.0 48.0 0 0 1 231.38 499.95 L210.18 196.69 A48.0 48.0 0 0 1 254.71 145.46 Z" fill="#8A93B4"/>
+<path id="Tarjeta_frontal" serif:id="Tarjeta frontal" d="M232.0 160.0 L776.0 160.0 A48.0 48.0 0 0 1 824.0 208.0 L824.0 512.0 A48.0 48.0 0 0 1 776.0 560.0 L232.0 560.0 A48.0 48.0 0 0 1 184.0 512.0 L184.0 208.0 A48.0 48.0 0 0 1 232.0 160.0 Z" fill="#1E2A5A"/>
+</g>
+<g id="Curva" serif:id="Curva de repetición espaciada">
+<path id="Linea_punteada" serif:id="Línea punteada" d="M244.0 376.0 C404.0 364.0 544.0 324.0 664.0 244.0" fill="none" stroke="#FFFFFF" stroke-width="6.0" stroke-linecap="round" stroke-dasharray="4.0 14.0"/>
+<g id="Puntos" serif:id="Puntos de repaso">
+<circle id="Repaso_1" serif:id="Repaso 1" cx="244.0" cy="376.0" r="12.0" fill="#FFFFFF"/>
+<circle id="Repaso_2" serif:id="Repaso 2" cx="276.0" cy="372.0" r="12.0" fill="#FFFFFF"/>
+<circle id="Repaso_3" serif:id="Repaso 3" cx="324.0" cy="366.0" r="12.0" fill="#FFFFFF"/>
+<circle id="Repaso_4" serif:id="Repaso 4" cx="396.0" cy="354.0" r="12.0" fill="#FFFFFF"/>
+<circle id="Repaso_5" serif:id="Repaso 5" cx="504.0" cy="324.0" r="12.0" fill="#FFFFFF"/>
+</g>
+</g>
+<g id="Proximo_repaso" serif:id="Próximo repaso">
+<circle id="Anillo" serif:id="Anillo" cx="664.0" cy="244.0" r="32.0" fill="none" stroke="#FFFFFF" stroke-width="6.0"/>
+<circle id="Punto" serif:id="Punto" cx="664.0" cy="244.0" r="18.0" fill="#FFFFFF"/>
+</g>
+<g id="Texto" serif:id="Texto">
+<text id="Nombre" serif:id="Nombre" x="240.0" y="508.0" style="font-family:'Fredoka-Bold', 'Fredoka';font-weight:700;font-size:144.0px;fill:#FFFFFF;">memora</text>
+<text id="Eslogan" serif:id="Eslogan" x="71.54" y="684.0" style="font-family:'Inter-SemiBold', 'Inter';font-weight:600;font-size:28.0px;letter-spacing:5.0px;fill:#1E2A5A;">REPETICIÓN ESPACIADA · APRENDIZAJE ACTIVO</text>
+</g>
+</svg>

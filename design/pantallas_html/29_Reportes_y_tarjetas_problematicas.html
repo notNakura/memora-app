@@ -1,0 +1,45 @@
+<!doctype html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<title>Memora – Reportes y tarjetas problemáticas</title>
+</head>
+<body>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Fredoka:wght@500;600;700&amp;family=Inter:wght@400;500;600&amp;display=swap">
+<style>
+body{margin:0}
+a{color:#FFFFFF}a:hover{color:#F2A93B}
+</style>
+<div style="width: 390px; height: 844px; box-sizing: border-box; overflow: hidden; background: #0E1430; font-family: 'Inter', sans-serif; color: #FFFFFF; padding: 20px 20px 28px; display: flex; flex-direction: column; gap: 18px">
+<div style="display: flex; align-items: center; gap: 14px">
+<button aria-label="Volver" style="width: 44px; height: 44px; border-radius: 999px; background: #1B2347; border: 2px solid #2E3970; color: #FFFFFF; display: flex; align-items: center; justify-content: center; box-shadow: 0 4px 0 #2E3970">
+<svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M15 5l-7 7 7 7"></path></svg></button>
+<h1 style="margin: 0; font-family: 'Fredoka', sans-serif; font-weight: 700; font-size: 30px">Reportes</h1>
+</div>
+
+<div role="tablist" aria-label="Tipo" style="display: grid; grid-template-columns: 1fr 1fr; gap: 6px; padding: 6px; border-radius: 999px; background: #1B2347; border: 2px solid #2E3970">
+<button role="tab" aria-selected="true" style="height: 40px; border: none; border-radius: 999px; background: #FFFFFF; color: #0E1430; font-family: 'Fredoka', sans-serif; font-weight: 600; font-size: 14px; box-shadow: 0 3px 0 #C9CEDD">Errores (2)</button>
+<button role="tab" aria-selected="false" style="height: 40px; border: none; border-radius: 999px; background: transparent; color: #B4BBD8; font-family: 'Fredoka', sans-serif; font-weight: 600; font-size: 14px">Problemáticas (1)</button>
+</div>
+
+<div style="background: #FFFFFF; color: #0E1430; border-radius: 28px; padding: 20px 22px; display: flex; flex-direction: column; gap: 10px; box-shadow: 0 6px 0 #C9CEDD">
+<span style="font-size: 13px; font-weight: 600; color: #B4531A">Falta una respuesta válida · hace 2 días</span>
+<span style="font-family: 'Fredoka', sans-serif; font-weight: 600; font-size: 18px; line-height: 1.3">Una clave ____ identifica de forma única cada fila.</span>
+<span style="font-size: 14px; color: #4A5370">Respuesta actual: primaria</span>
+<span style="font-size: 14px; line-height: 1.45; padding: 10px 12px; border-radius: 12px; background: #F1F3F8">«También debería aceptar "clave principal".» · Carla Rojas</span>
+<div style="display: grid; grid-template-columns: 1fr 1fr; gap: 10px; margin-top: 4px">
+<button style="height: 44px; border-radius: 999px; background: #FFFFFF; border: 2px solid #C9CEDD; color: #0E1430; font-family: 'Fredoka', sans-serif; font-weight: 600; font-size: 14px">Descartar</button>
+<button style="height: 44px; border: none; border-radius: 999px; background: #0E1430; color: #FFFFFF; font-family: 'Fredoka', sans-serif; font-weight: 600; font-size: 14px; box-shadow: 0 4px 0 #03050F">Corregir tarjeta</button>
+</div>
+</div>
+
+<div style="display: flex; flex-direction: column; gap: 8px; padding: 16px 18px; border-radius: 16px; background: #1B2347; border: 2px solid #2E3970">
+<span style="font-size: 13px; font-weight: 600; color: #F2A93B">La respuesta es incorrecta · ayer</span>
+<span style="font-weight: 600; font-size: 15px">¿Qué exige la segunda forma normal?</span>
+<span style="font-size: 13px; color: #B4BBD8">Reportado por Luis Pérez</span>
+</div>
+
+<p style="margin: 0; font-size: 13px; line-height: 1.5; color: #B4BBD8">Al corregir una tarjeta se actualiza para todos y se conserva el progreso. Quien reportó recibe un aviso con tu respuesta.</p>
+</div>
+</body>
+</html>

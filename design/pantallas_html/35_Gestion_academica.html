@@ -1,0 +1,50 @@
+<!doctype html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<title>Memora – Administración</title>
+</head>
+<body>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Fredoka:wght@500;600;700&amp;family=Inter:wght@400;500;600&amp;display=swap">
+<style>
+body{margin:0}
+a{color:#FFFFFF}a:hover{color:#F2A93B}
+</style>
+<div style="width: 390px; height: 844px; box-sizing: border-box; overflow: hidden; background: #0E1430; font-family: 'Inter', sans-serif; color: #FFFFFF; padding: 20px 20px 28px; display: flex; flex-direction: column; gap: 20px">
+<div style="display: flex; flex-direction: column; gap: 4px">
+<span style="font-size: 14px; color: #B4BBD8">Administrador · UNERG</span>
+<h1 style="margin: 0; font-family: 'Fredoka', sans-serif; font-weight: 700; font-size: 30px">Gestión académica</h1>
+</div>
+<label style="display: flex; align-items: center; gap: 10px; min-height: 48px; padding: 0 16px; border-radius: 16px; background: #1B2347; border: 2px solid #6873B0"><span style="font-size: 14px; color: #B4BBD8">Área</span><select aria-label="Área" style="flex: 1; min-width: 0; border: none; background: transparent; color: #FFFFFF; font-family: 'Inter', sans-serif; font-weight: 600; font-size: 15px"><option>Ingeniería de Sistemas</option><option>Odontología</option></select></label>
+
+<div role="tablist" aria-label="Gestión" style="display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 6px; padding: 6px; border-radius: 999px; background: #1B2347; border: 2px solid #2E3970">
+<button role="tab" aria-selected="false" style="height: 40px; border: none; border-radius: 999px; background: transparent; color: #B4BBD8; font-family: 'Fredoka', sans-serif; font-weight: 600; font-size: 14px">Usuarios</button>
+<button role="tab" aria-selected="false" style="height: 40px; border: none; border-radius: 999px; background: transparent; color: #B4BBD8; font-family: 'Fredoka', sans-serif; font-weight: 600; font-size: 14px">Materias</button>
+<button role="tab" aria-selected="true" style="height: 40px; border: none; border-radius: 999px; background: #FFFFFF; color: #0E1430; font-family: 'Fredoka', sans-serif; font-weight: 600; font-size: 14px; box-shadow: 0 3px 0 #C9CEDD">Secciones</button>
+</div>
+
+<div style="display: flex; align-items: center; gap: 14px; padding: 16px 18px; border-radius: 16px; background: #F2A93B; color: #0E1430; box-shadow: 0 4px 0 #C17A14">
+<span style="flex: 1; display: flex; flex-direction: column"><span style="font-weight: 600; font-size: 15px">2 profesores por confirmar</span><span style="font-size: 13px">Se registraron con rol de profesor</span></span>
+<button style="height: 40px; padding: 0 14px; border: none; border-radius: 999px; background: #0E1430; color: #FFFFFF; font-family: 'Fredoka', sans-serif; font-weight: 600; font-size: 14px">Revisar</button>
+</div>
+
+<div style="display: flex; flex-direction: column; gap: 10px">
+<span style="display: flex; justify-content: space-between; align-items: center"><span style="font-family: 'Fredoka', sans-serif; font-weight: 600; font-size: 22px">Lapso 2026-II</span><button style="height: 36px; padding: 0 14px; border-radius: 999px; background: transparent; border: 2px solid #2E3970; color: #FFFFFF; font-size: 13px; font-weight: 600">Cerrar lapso</button></span>
+<div style="display: flex; flex-direction: column; gap: 4px; padding: 14px 16px; border-radius: 16px; background: #1B2347; border: 2px solid #2E3970; box-shadow: 0 4px 0 #2E3970">
+<span style="display: flex; justify-content: space-between; gap: 10px"><span style="font-weight: 600; font-size: 16px">SI3 · Sección 1</span><span style="font-family: 'Fredoka', sans-serif; font-weight: 600; font-size: 15px; color: #F2A93B">SK3A26</span></span>
+<span style="font-size: 13px; color: #B4BBD8">Prof. María Hernández · 32 estudiantes</span>
+</div>
+<div style="display: flex; flex-direction: column; gap: 4px; padding: 14px 16px; border-radius: 16px; background: #1B2347; border: 2px solid #2E3970; box-shadow: 0 4px 0 #2E3970">
+<span style="display: flex; justify-content: space-between; gap: 10px"><span style="font-weight: 600; font-size: 16px">SI3 · Sección 2</span><span style="font-family: 'Fredoka', sans-serif; font-weight: 600; font-size: 15px; color: #F2A93B">SK3B26</span></span>
+<span style="font-size: 13px; color: #B4BBD8">Prof. José Ramírez · 28 estudiantes</span>
+</div>
+<div style="display: flex; flex-direction: column; gap: 4px; padding: 14px 16px; border-radius: 16px; background: #1B2347; border: 2px solid #2E3970; box-shadow: 0 4px 0 #2E3970">
+<span style="display: flex; justify-content: space-between; gap: 10px"><span style="font-weight: 600; font-size: 16px">Base de Datos · Sección 1</span><span style="font-family: 'Fredoka', sans-serif; font-weight: 600; font-size: 15px; color: #F2A93B">BDA726</span></span>
+<span style="font-size: 13px; color: #B4BBD8">Sin profesor asignado</span>
+</div>
+</div>
+
+<button style="margin-top: auto; height: 56px; border: none; border-radius: 999px; background: #FFFFFF; color: #0E1430; font-family: 'Fredoka', sans-serif; font-weight: 600; font-size: 17px; box-shadow: 0 4px 0 #C9CEDD; text-transform: uppercase; letter-spacing: 0.8px">Nueva sección</button>
+</div>
+</body>
+</html>

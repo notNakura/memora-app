@@ -1,0 +1,75 @@
+@startuml cu_estudiante
+left to right direction
+skinparam shadowing false
+skinparam defaultFontName "DejaVu Sans"
+skinparam defaultFontSize 13
+skinparam actorBorderColor #1E2A5A
+skinparam actorBackgroundColor #F2A93B
+skinparam usecaseBorderColor #1E2A5A
+skinparam usecaseBackgroundColor #FFFFFF
+skinparam rectangleBorderColor #1E2A5A
+skinparam rectangleFontSize 15
+skinparam ArrowColor #1E2A5A
+actor "Estudiante" as E
+actor "Planificador\nde repasos" as PL <<secundario>>
+rectangle "Memora (aplicación) · Estudiante" {
+  usecase "CU-01 Iniciar sesión, registrarse\ny recuperar la contraseña" as CU01
+  usecase "CU-31 Consultar guía\nde inicio y ayuda" as CU31
+  usecase "CU-35 Unirse a una institución\ny cambiar de institución" as CU35
+  usecase "CU-04 Unirse a una sección\no salir de ella" as CU04
+  usecase "CU-09 Realizar evaluación\ndiagnóstica" as CU09
+  usecase "CU-10 Repasar tarjetas" as CU10
+  usecase "Ver por qué aparece\nla tarjeta" as EXT_POR
+  usecase "Programar próximo\nrepaso (FSRS)" as INC_FSRS
+  usecase "CU-11 Realizar Reto\nde dominio" as CU11
+  usecase "Pausar o pedir\nmás tiempo" as EXT_T
+  usecase "CU-13 Presentar evaluación" as CU13
+  usecase "Actualizar estado\nde las tarjetas" as INC_EST
+  usecase "Presentar segunda\noportunidad" as EXT_2
+  usecase "CU-14 Consultar resultados,\nhistorial y plan de refuerzo" as CU14
+  usecase "CU-15 Consultar progreso\ny logros" as CU15
+  usecase "CU-20 Practicar un mazo\no una unidad" as CU20
+  usecase "CU-21 Explorar y\nagregar mazos" as CU21
+  usecase "CU-05 Crear mazo" as CU05
+  usecase "Importar tarjetas\ndesde CSV" as EXT_CSV
+  usecase "CU-06 Definir visibilidad\ndel mazo" as CU06
+  usecase "CU-22 Editar o eliminar\nmazo y tarjetas" as CU22
+  usecase "CU-16 Reportar error\nen una tarjeta" as CU16
+  usecase "CU-26 Atender reportes\nde mis mazos" as CU26
+  usecase "CU-19 Configurar perfil\ny preferencias" as CU19
+  usecase "CU-18 Sincronizar datos" as CU18
+  usecase "CU-30 Recibir\nnotificaciones" as CU30
+}
+E --> CU01
+E --> CU31
+E --> CU35
+E --> CU04
+E --> CU09
+E --> CU10
+E --> CU11
+E --> CU13
+E --> CU14
+E --> CU15
+E --> CU20
+E --> CU21
+E --> CU05
+E --> CU06
+E --> CU22
+E --> CU16
+E --> CU26
+E --> CU19
+E --> CU18
+E --> CU30
+EXT_POR ..> CU10 : <<extend>>
+CU10 ..> INC_FSRS : <<include>>
+CU11 ..> INC_FSRS : <<include>>
+EXT_T ..> CU11 : <<extend>>
+EXT_T ..> CU13 : <<extend>>
+CU13 ..> INC_EST : <<include>>
+CU09 ..> INC_EST : <<include>>
+EXT_2 ..> CU13 : <<extend>>
+EXT_CSV ..> CU05 : <<extend>>
+INC_FSRS <-- PL
+CU11 <-- PL
+CU30 <-- PL
+@enduml

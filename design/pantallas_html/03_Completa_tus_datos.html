@@ -1,0 +1,53 @@
+<!doctype html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<title>Memora – Completa tus datos</title>
+</head>
+<body>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Fredoka:wght@500;600;700&amp;family=Inter:wght@400;500;600&amp;display=swap">
+<style>
+body{margin:0}
+a{color:#FFFFFF}a:hover{color:#F2A93B}
+</style>
+<div style="width: 390px; height: 844px; box-sizing: border-box; overflow: hidden; background: #0E1430; font-family: 'Inter', sans-serif; color: #FFFFFF; padding: 20px 20px 28px; display: flex; flex-direction: column; gap: 16px">
+<div style="display: flex; align-items: center; gap: 14px">
+<button aria-label="Volver al paso 2" style="width: 44px; height: 44px; border-radius: 999px; background: #1B2347; border: 2px solid #2E3970; color: #FFFFFF; display: flex; align-items: center; justify-content: center; box-shadow: 0 4px 0 #2E3970">
+<svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M15 5l-7 7 7 7"></path></svg></button>
+<div style="display: flex; flex-direction: column"><h1 style="margin: 0; font-family: 'Fredoka', sans-serif; font-weight: 700; font-size: 28px">Completa tus datos</h1><span style="font-size: 13px; color: #B4BBD8">Crear cuenta · paso 3 de 3</span></div>
+</div>
+
+<div style="display: flex; align-items: center; gap: 12px; padding: 12px 14px; border-radius: 16px; background: #CFF1E7; color: #0E1430">
+<svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="9"></circle><path d="M12 8h.01M11 12h1v5h1"></path></svg>
+<span style="font-size: 13px; line-height: 1.4">Tu correo está en la lista de inscritos de la UNERG: tus datos ya están cargados. Revísalos.</span>
+</div>
+
+<div style="display: flex; flex-direction: column; gap: 6px">
+<label for="dt-cedula" style="font-size: 14px; font-weight: 600; color: #B4BBD8">Cédula de identidad</label>
+<input id="dt-cedula" value="V-20.000.001" style="height: 52px; border-radius: 16px; border: 2px solid #6873B0; background: #1B2347; padding: 0 16px; font-family: 'Inter', sans-serif; font-size: 16px; color: #FFFFFF">
+</div>
+<div style="display: flex; flex-direction: column; gap: 6px">
+<label for="dt-nombres" style="font-size: 14px; font-weight: 600; color: #B4BBD8">Nombres</label>
+<input id="dt-nombres" value="Luis Alberto" style="height: 52px; border-radius: 16px; border: 2px solid #6873B0; background: #1B2347; padding: 0 16px; font-family: 'Inter', sans-serif; font-size: 16px; color: #FFFFFF">
+</div>
+<div style="display: flex; flex-direction: column; gap: 6px">
+<label for="dt-apellidos" style="font-size: 14px; font-weight: 600; color: #B4BBD8">Apellidos</label>
+<input id="dt-apellidos" value="Pérez Gil" style="height: 52px; border-radius: 16px; border: 2px solid #6873B0; background: #1B2347; padding: 0 16px; font-family: 'Inter', sans-serif; font-size: 16px; color: #FFFFFF">
+</div>
+
+<div style="display: grid; grid-template-columns: minmax(0, 1fr) minmax(0, 1fr); gap: 10px">
+<div style="display: flex; flex-direction: column; gap: 6px; min-width: 0">
+<label for="dt-nac" style="font-size: 14px; font-weight: 600; color: #B4BBD8">Fecha de nacimiento</label>
+<input id="dt-nac" type="date" value="2004-05-21" style="height: 52px; min-width: 0; border-radius: 16px; border: 2px solid #6873B0; background: #1B2347; padding: 0 12px; font-family: 'Inter', sans-serif; font-size: 15px; color: #FFFFFF; color-scheme: dark">
+</div>
+<div style="display: flex; flex-direction: column; gap: 6px; min-width: 0">
+<label for="dt-sexo" style="font-size: 14px; font-weight: 600; color: #B4BBD8">Sexo</label>
+<select id="dt-sexo" style="height: 52px; min-width: 0; border-radius: 16px; border: 2px solid #6873B0; background: #1B2347; padding: 0 12px; font-family: 'Inter', sans-serif; font-size: 15px; color: #FFFFFF"><option>Masculino</option><option>Femenino</option><option>Prefiero no decirlo</option></select>
+</div>
+</div>
+<span style="font-size: 13px; line-height: 1.4; color: #B4BBD8">La fecha de nacimiento y el sexo son opcionales. Sirven para dirigirnos a ti correctamente en los mensajes y para estadísticas generales; tu profesor no los ve.</span>
+
+<button style="margin-top: auto; height: 56px; border: none; border-radius: 999px; background: #FFFFFF; color: #0E1430; font-family: 'Fredoka', sans-serif; font-weight: 600; font-size: 17px; box-shadow: 0 4px 0 #C9CEDD; text-transform: uppercase; letter-spacing: 0.8px">Crear cuenta</button>
+</div>
+</body>
+</html>

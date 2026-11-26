@@ -1,0 +1,43 @@
+<!doctype html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<title>Memora – Registrar institución</title>
+</head>
+<body>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Fredoka:wght@500;600;700&amp;family=Inter:wght@400;500;600&amp;display=swap">
+<style>
+body{margin:0}
+a{color:#FFFFFF}a:hover{color:#F2A93B}
+</style>
+<div style="width: 390px; height: 844px; box-sizing: border-box; overflow: hidden; background: #0E1430; font-family: 'Inter', sans-serif; color: #FFFFFF; padding: 20px 20px 28px; display: flex; flex-direction: column; gap: 16px">
+<div style="display: flex; align-items: center; gap: 14px">
+<button aria-label="Volver" style="width: 44px; height: 44px; border-radius: 999px; background: #1B2347; border: 2px solid #2E3970; color: #FFFFFF; display: flex; align-items: center; justify-content: center; box-shadow: 0 4px 0 #2E3970">
+<svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M15 5l-7 7 7 7"></path></svg></button>
+<h1 style="margin: 0; font-family: 'Fredoka', sans-serif; font-weight: 700; font-size: 26px">Registrar mi institución</h1>
+</div>
+
+<p style="margin: 0; font-size: 15px; line-height: 1.5; color: #B4BBD8">Registra tu universidad, instituto o curso. Quedarás como su administrador y podrás crear áreas, cargar usuarios y nombrar a otros administradores.</p>
+
+<div style="display: flex; flex-direction: column; gap: 6px">
+<label for="ri-nombre" style="font-size: 14px; font-weight: 600; color: #B4BBD8">Nombre de la institución</label>
+<input id="ri-nombre" value="Universidad Nacional Experimental Rómulo Gallegos" style="height: 52px; border-radius: 16px; border: 2px solid #6873B0; background: #1B2347; padding: 0 16px; font-family: 'Inter', sans-serif; font-size: 15px; color: #FFFFFF">
+</div>
+
+<fieldset style="margin: 0; padding: 0; border: none; display: flex; flex-direction: column; gap: 8px">
+<legend style="padding: 0; margin-bottom: 6px; font-size: 14px; font-weight: 600; color: #B4BBD8">Tipo</legend>
+<label style="display: flex; gap: 14px; align-items: center; min-height: 54px; padding: 0 16px; border-radius: 16px; background: #F2A93B; color: #0E1430; box-sizing: border-box; box-shadow: 0 4px 0 #C17A14"><span style="flex: 1; display: flex; flex-direction: column"><span style="font-weight: 600; font-size: 15px">Universidad</span><span style="font-size: 13px">Con áreas, lapsos y varias materias</span></span><input type="radio" name="tipo" checked style="width: 22px; height: 22px; margin: 0; accent-color: #0E1430"></label>
+<label style="display: flex; gap: 14px; align-items: center; min-height: 54px; padding: 0 16px; border-radius: 16px; background: #1B2347; border: 2px solid #2E3970; box-sizing: border-box; box-shadow: 0 4px 0 #2E3970"><span style="flex: 1; display: flex; flex-direction: column"><span style="font-weight: 600; font-size: 15px">Instituto</span><span style="font-size: 13px; color: #B4BBD8">Institutos y colegios universitarios</span></span><input type="radio" name="tipo" style="width: 22px; height: 22px; margin: 0; accent-color: #F2A93B"></label>
+<label style="display: flex; gap: 14px; align-items: center; min-height: 54px; padding: 0 16px; border-radius: 16px; background: #1B2347; border: 2px solid #2E3970; box-sizing: border-box; box-shadow: 0 4px 0 #2E3970"><span style="flex: 1; display: flex; flex-direction: column"><span style="font-weight: 600; font-size: 15px">Curso</span><span style="font-size: 13px; color: #B4BBD8">Un curso o diplomado con pocas materias</span></span><input type="radio" name="tipo" style="width: 22px; height: 22px; margin: 0; accent-color: #F2A93B"></label>
+</fieldset>
+
+<div style="display: flex; flex-direction: column; gap: 6px">
+<span style="font-size: 14px; font-weight: 600; color: #B4BBD8">Correo de contacto</span>
+<div style="display: flex; align-items: center; gap: 10px; min-height: 52px; padding: 0 16px; border-radius: 16px; background: #1B2347; border: 2px solid #2E3970; box-sizing: border-box"><span style="flex: 1; font-size: 15px">pedro.gomez@gmail.com</span><span style="padding: 2px 8px; border-radius: 999px; background: #CFF1E7; color: #0E1430; font-size: 12px; font-weight: 600">Verificado</span></div>
+<span style="font-size: 13px; color: #B4BBD8">Es el correo de tu cuenta. La institución lo usará para avisos de Memora.</span>
+</div>
+
+<button style="margin-top: auto; height: 56px; border: none; border-radius: 999px; background: #FFFFFF; color: #0E1430; font-family: 'Fredoka', sans-serif; font-weight: 600; font-size: 17px; box-shadow: 0 4px 0 #C9CEDD; text-transform: uppercase; letter-spacing: 0.8px">Registrar institución</button>
+</div>
+</body>
+</html>

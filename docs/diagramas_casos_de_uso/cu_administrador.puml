@@ -1,0 +1,45 @@
+@startuml cu_administrador
+left to right direction
+skinparam shadowing false
+skinparam defaultFontName "DejaVu Sans"
+skinparam defaultFontSize 13
+skinparam actorBorderColor #1E2A5A
+skinparam actorBackgroundColor #F2A93B
+skinparam usecaseBorderColor #1E2A5A
+skinparam usecaseBackgroundColor #FFFFFF
+skinparam rectangleBorderColor #1E2A5A
+skinparam rectangleFontSize 15
+skinparam ArrowColor #1E2A5A
+actor "Administrador\n(institución o área)" as A
+actor "Superadministrador\nde la plataforma" as SA <<secundario>>
+rectangle "Memora (aplicación) · Administración" {
+  usecase "CU-33 Registrar una\ninstitución" as CU33
+  usecase "CU-34 Gestionar áreas\ny administradores" as CU34
+  usecase "Asignar o quitar rol\nde administrador" as INC_ROL
+  usecase "CU-36 Suspender una\ninstitución" as CU36
+  usecase "CU-01 Iniciar sesión\ny recuperar la contraseña" as CU01
+  usecase "CU-02 Gestionar usuarios\ny membresías" as CU02
+  usecase "Importar usuarios\ndesde CSV" as EXT_IMP
+  usecase "Restablecer\ncontraseña" as EXT_RES
+  usecase "CU-28 Gestionar lapsos\nacadémicos" as CU28
+  usecase "CU-03 Gestionar materias,\nunidades y secciones del área" as CU03
+  usecase "CU-37 Configurar el ingreso\ny atender solicitudes" as CU37
+  usecase "Cargar lista de\ninscritos (CSV)" as INC_LIS
+  usecase "CU-29 Moderar mazos\npúblicos" as CU29
+  usecase "CU-32 Consultar bitácora" as CU32
+}
+A --> CU33
+A --> CU34
+A --> CU01
+CU34 ..> INC_ROL : <<include>>
+SA --> CU36
+A --> CU02
+A --> CU28
+A --> CU03
+A --> CU37
+CU37 ..> INC_LIS : <<include>>
+A --> CU29
+A --> CU32
+EXT_IMP ..> CU02 : <<extend>>
+EXT_RES ..> CU02 : <<extend>>
+@enduml
